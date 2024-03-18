@@ -11,8 +11,8 @@ import Seal from './components/Seal';
 import Showcase from './components/Showcase';
 import Trust from './components/Trust';
 import Work from './components/Work';
-// export const url="http://localhost:8000"
-export const url="https://techkender-be.onrender.com"
+export const url="http://localhost:8000"
+// export const url="https://techkender-be.onrender.com"
 
 function App() {
   return (

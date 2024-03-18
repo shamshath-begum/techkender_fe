@@ -18,12 +18,13 @@ try {
   let res=await axios.post(`${url}/sendMail`,{email})
   if(res.status===201){
     toast.success(res.data.message)
+    setEmail("")
   }
 
 } catch (error) {
   toast.error(error.response.data.message)
   if(error.response.status===401){
-    console.log("error")
+    toast.error("Please Enter Your Email")
   }
 }
   }
