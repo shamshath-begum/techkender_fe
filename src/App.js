@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Connect from './components/Connect';
+import Discover from './components/Discover';
+import FirstContent from './components/FirstContent';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import MainImage from './components/MainImage';
+import Reason from './components/Reason';
+import Seal from './components/Seal';
+import Showcase from './components/Showcase';
+import Trust from './components/Trust';
+import Work from './components/Work';
+// export const url="http://localhost:8000"
+export const url="https://techkender-be.onrender.com"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <FirstContent/>
+      <MainImage/>
+      <Work/>
+      <Discover/>
+      <Showcase/>
+      <Connect/>
+      <Seal/>
+      <Reason/>
+      <Trust/>
+      <Footer/>
     </div>
   );
 }
